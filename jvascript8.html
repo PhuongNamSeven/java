@@ -1,0 +1,169 @@
+<html>
+	<head> <title> Le Nguyen Phuong Nam </title></head>
+	<link href="cssbai8.css" rel="stylesheet"> <!--khai bao css-->
+	<script src="jsbai8.js"></script> <!--khai bao js-->
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+	</script> 
+	
+	<script>
+		$(document).ready(function(){
+			$("#len").click(function(){
+			$("#container")
+						.slideUp(3000);
+		});
+		});
+		$(document).ready(function(){
+			$("#xuong").click(function(){
+			$("#container")
+						.slideDown(3000);
+		});
+		});
+		
+	</script>
+	<body>
+		<div id="dk">
+			<Button id="len" style="width:80px;height:60px;background-color:red;border-radius:10px;color:black;"> Len nao</Button> <br>
+			<Button id="xuong" style="width:80px;height:60px;background-color:yellow;border-radius:10px;color:black;">Xuong cc</Button> <br>
+		</div>
+		
+
+		<div id="container">
+		<!--tao 2 div chua dang ki va dang nhap-->
+		<!--cai nhap vao the href-->
+			<a href="#" id="dangki"class="tab" onClick="NhanDangKi()"> ĐĂNG KÝ </a> <!-- dat 2 class giong nhau chinh sua 1 cai--> <!-- su dung du kien onClick xu li-->
+			<a href="#" id="dangnhap"class="tab" id="dn" onClick="NhanDangNhap()"> ĐĂNG NHẬP </a> <!-- muon chinh sua no them 1 cai id-->
+			<div id="divdangky" class="divform">
+				<form name="frmDangKi" action="phuongnam.php"> <!--tao 1 form chua nhung thu can xu li-->
+					<h3> ĐĂNG KÝ THÀNH VIÊN </H3>
+					<hr> 
+					<div id="thongbao">
+					<p id="pthongbao">
+				
+					</p>
+				</div>					
+					<table id="bangthongtin">
+						<tr>
+							<td>Tên đăng nhập:</td>
+						<td><input type="text" id="tendangnhap" name="tendangnhap"  class="repair"/></td>
+						</tr>
+					
+						<tr>
+							<td>Mật khẩu:</td>
+							<td><input type="password" id="matkhau" name="matkhau" class="repair"/></td>
+						</tr>
+					
+						<tr>
+							<td>Email: </td>
+							<td><input type="text" id="email" name="email" class="repair"/></td>
+						</tr>
+					
+						<tr>
+							<td>
+								Nghề nghiệp
+							</td>
+							<td>
+								<select class="repair" id="nghenghiep">
+									<option>Vui long chon</option>
+									<option>Giao vien</option>
+									<option>Ky su</option>
+									<option>Cong nhan</option>
+									<option>Bac si</option>
+									<option>khac...</option>
+								</select> <br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Tuổi
+							</td>
+							<td>
+								<input type="text" id="tuoi" name="tuoi" class="repair"> </input><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Giới tính 
+							</td>
+							<td>
+								<input type="radio" id="nam"name="nam" value="gioitinh2"class="repair"> Nam </input> 
+								<input type="radio" id="nu"name="nu" value="gioitinh1"class="repair1"> Nu </input> 
+							</td>
+							
+						</tr>
+						<tr>
+						
+							<td>
+							</td>
+							<td >
+								<input type="Submit" style="background:yellow;"id="btndangki" value="ĐĂNG KÝ"class="repair" onclick="return KiemTraHopLe()"></input> 
+							</td>
+						</tr>
+						<tr>
+						</tr>
+						<tr>
+							<td colspan="2">
+								Nếu bạn đã có tài khoản. Vui lòng click vào :
+							</td>
+							<td>
+								<a id="chon" href="#" class="repair" onClick="NhanDangNhap()"> đăng nhập </a> 
+								
+							</td>
+							
+						</tr>
+						
+					</table><!--tao bang de chua thong tin-->
+					
+				</form>
+			</div>
+			<div id="divdangnhap" class="divform">
+				<form class="formdangnhap" action="phuongnam.php"> <!--tao 1 form chua nhung thu can xu li-->
+					<h3> ĐĂNG NHẬP </H3>
+					<hr> 		
+					<table id="bangthongtin">
+						<tr>
+							<td>
+								Tên đăng nhập
+							</td>
+							<td>
+								<input type="text" id="tendangnhap2" class="repair"> </input><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Mật khẩu
+							</td>
+							<td>
+								<input type="text" id="matkhau2"class="repair"> </input> <br>
+							</td>
+						</tr>	
+						<tr>
+						
+							<td>
+							</td>
+							<td >
+								<input type="Submit" style="background:yellow;"id="btndangnhap" value="ĐĂNG NHẬP"class="repair"></input> 
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								Nếu bạn chưa có tài khoản. Vui lòng click vào :
+							</td>
+							<td>
+								<a id="chon" href="#" class="repair" onClick="NhanDangKi()"> đăng ký </a> 
+								
+							</td>
+							
+						</tr>
+						
+					</table><!--tao bang de chua thong tin-->
+				</form>
+			</div>
+			
+		
+		</div>	
+		
+	</body>
+</html>

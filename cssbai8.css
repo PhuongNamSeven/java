@@ -1,0 +1,61 @@
+#container{	   					/*the id cua div container dung de can chinh giua html*/
+	margin: 0 auto;
+	width:400px;
+	height: auto;
+	background:aliceblue;
+	border-radius: 10px;
+
+}
+.tab{ 							/*the class cua dang ki va dang nhap*/
+	text-decoration: none;
+    background: #ff9bae;
+    display: inline-block;
+    padding: 5px 5px;
+	margin: 8px;	
+}
+#dangnhap{
+	background:deepskyblue; /*the id cua dang nhap*/
+}
+#divdangnhap{
+	display:none;
+}
+a.tab:hover{
+	background:yellow !important;  /*important quan trong uu tien su dung*/
+}
+.formdangky h3 ,.formdangnhap{
+	text-align:center;
+	color:red;
+}
+.formdangky table,.formdangnhap table{
+	margin: 5px;
+	
+	
+}
+.repair{
+	padding:3px;
+	margin:2px;
+	text-decoration:none;
+}
+.repairdangki{
+	padding:5px;
+	margin:5px;
+}
+#btndangki:hover ,#btndangnhap:hover{
+	background: red !important; width:80px; height:30px ;
+	cursor:pointer;
+}
+#pthongbao {
+	color: red;
+	padding: 10px;
+	background: yellow;
+	display: none;
+	margin-right: 30px;	
+}
+#len:hover{
+	background: deepskyblue !important;
+	cursor:pointer;
+}
+#xuong:hover{
+	background: deepskyblue !important;
+	cursor:pointer;
+}
